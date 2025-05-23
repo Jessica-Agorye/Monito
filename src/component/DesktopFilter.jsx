@@ -28,7 +28,7 @@ const DesktopFilter = ({ selected, onChange }) => {
               <span className="pl-2">Female</span>
             </label>
 
-            <label htmlFor="" className="flex">
+            {/* <label htmlFor="" className="flex">
               <input
                 type="radio"
                 name="gender"
@@ -36,7 +36,7 @@ const DesktopFilter = ({ selected, onChange }) => {
                 onChange={() => onChange("")}
               />
               <span className="pl-2">All</span>
-            </label>
+            </label> */}
           </div>
           <div className="mt-10  border-t-1 border-gray-200  pt-2.5 ">
             <p className="font-bold">Color</p>
