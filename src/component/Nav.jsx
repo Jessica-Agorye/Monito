@@ -1,7 +1,7 @@
 import { useState } from "react";
 import logo from "../assets/logo.png";
 import hamburger1 from "../assets/hamburger1.png";
-import searchicon from "../assets/searchicon.png";
+import search from "../assets/search.png";
 import i18n from "../assets/i18n.png";
 
 const Nav = () => {
@@ -21,7 +21,7 @@ const Nav = () => {
         />
         <img src={logo} className="w-[91.58px] h-[21.47px]" />
         <img
-          src={searchicon}
+          src={search}
           className="w-[23px] h-[23px] lg:hidden"
           alt="search-icon"
         />
@@ -43,7 +43,7 @@ const Nav = () => {
 
         <div className="hidden lg:flex lg:items-center relative">
           <img
-            src={searchicon}
+            src={search}
             className="absolute -left-[30px]"
             alt="search-icon"
           />
