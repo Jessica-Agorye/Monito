@@ -24,13 +24,16 @@ const ProductDisplay = ({ pets, currentPage, setCurrentPage }) => {
 
   return (
     <div className="mt-10 lg:px-8">
-      <div className="hidden lg:flex lg:justify-between">
+      <div className=" lg:flex lg:justify-between">
         <p className="pl-6 lg:pl-0 font-bold text-xl text-[#003459]  ">
           Small Dogs :{" "}
           <span className="text-gray-400 text-sm">{pets.length} puppies</span>
         </p>
 
-        <SortButton />
+        <div className="hidden lg:block">
+          {" "}
+          <SortButton />
+        </div>
       </div>
       <div className="grid grid-cols-2 lg:grid-cols-3 lg:gap-6 ">
         {currentPets.map((pet, id) => (
