@@ -1,5 +1,5 @@
 import SortButton from "./SortButton";
-import filterIcon from "../assets/filterIcon.png";
+import filtericon from "../assets/filtericon.png";
 
 const MobileFilter = () => {
   return (
@@ -9,7 +9,7 @@ const MobileFilter = () => {
           <SortButton />
         </div>
         <div className="flex gap-2 items-center">
-          <img src={filterIcon} alt="filter-icon" />
+          <img src={filtericon} alt="filter-icon" />
           <p className="lg:text-[#003459] text-lg font-bold">Filter</p>
         </div>
       </div>
