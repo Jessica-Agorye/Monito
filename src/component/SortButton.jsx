@@ -35,13 +35,13 @@ const SortButton = () => {
             <li>
               {" "}
               <a href="" className="block px-2 py-1 hover:bg-gray-100 rounded">
-                greyhound
+                name
               </a>
             </li>
             <li>
               {" "}
               <a href="" lassName="block px-2 py-1 hover:bg-gray-100 rounded">
-                Pitbull
+                popularity
               </a>
             </li>
           </ul>
