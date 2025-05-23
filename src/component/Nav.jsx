@@ -1,7 +1,7 @@
 import { useState } from "react";
 import logo from "../assets/logo.png";
 import hamburger1 from "../assets/hamburger1.png";
-import searchicon from "../assets/searchIcon.png";
+import searchicon from "../assets/searchicon.png";
 import i18n from "../assets/i18n.png";
 
 const Nav = () => {
@@ -13,7 +13,6 @@ const Nav = () => {
 
   return (
     <section className="m-6  lg:pr-[100px] lg:pb-[28px] lg:pl-[100px] relative ">
-      {/* For my Mobile View */}
       <div className=" flex justify-between w-full h-[57px]  mt-[40px] lg:items-center lg:justify-between  ">
         <img
           src={hamburger1}
