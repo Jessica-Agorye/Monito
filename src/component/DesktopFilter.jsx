@@ -70,12 +70,28 @@ const DesktopFilter = ({ selected, onChange }) => {
           <div className=" mt-4 border-t-1 border-gray-200 ">
             <p className="font-bold pt-2">Price</p>
             <div className="mt-2 space-x-2">
-              <button className="  border-gray-200 w-[130px] h-[40px] border-b-1">
+              {/* <button className="  border-gray-200 w-[130px] h-[40px] border-b-1">
                 <p> Min </p>
-              </button>
-              <button className="  border-gray-200 w-[130px] h-[40px] border-b-1">
-                <p> Max</p>
-              </button>
+              </button> */}
+
+              <select
+                name="priceSelection"
+                id="price-selection"
+                className="  border-gray-200 w-[130px] h-[40px] border-b-1 focus:outline-none"
+              >
+                <option value="">Min</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+              </select>
+              <select
+                name="priceSelection"
+                id="price-selection"
+                className="  border-gray-200 w-[130px] h-[40px] border-b-1 focus:outline-none"
+              >
+                <option value="">Max</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+              </select>
             </div>
           </div>
         </div>
