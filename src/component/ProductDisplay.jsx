@@ -13,6 +13,15 @@ const ProductDisplay = ({ pets, currentPage, setCurrentPage }) => {
 
   const pageCount = Math.ceil(pets.length / itemsPerPage);
 
+  console.log({
+    currentPage,
+    offset,
+    itemsPerPage,
+    petsLength: pets.length,
+    currentPetsLength: currentPets.length,
+    pageCount,
+  });
+
   return (
     <div className="mt-10 lg:px-8">
       <div className="hidden lg:flex lg:justify-between">
@@ -25,8 +34,8 @@ const ProductDisplay = ({ pets, currentPage, setCurrentPage }) => {
       </div>
       <div className="grid grid-cols-2 lg:grid-cols-3 lg:gap-6 ">
         {currentPets.map((pet, id) => (
-          <div className="bg-white rounded-lg shadow-lg p-4  ">
-            <div key={id} className="px-2 py-2 leading-10 ">
+          <div key={id} className="bg-white rounded-lg shadow-lg p-4  ">
+            <div className="px-2 py-2 leading-10 ">
               <img
                 src={pet.image}
                 className="rounded-lg mx-auto object-cover w-full h-48"
@@ -51,11 +60,11 @@ const ProductDisplay = ({ pets, currentPage, setCurrentPage }) => {
         pageCount={pageCount}
         onPageChange={({ selected }) => setCurrentPage(selected)}
         containerClassName={"flex justify-center mt-8 space-x-2"}
-        pageClassName={"px-3 py-1 border rounded"}
-        activeClassName={"bg-[#003459] text-white"}
-        previousClassName={"px-3 py-1 border rounded"}
-        nextClassName={"px-3 py-1 border rounded"}
-        disabledClassName={"opacity-50 cursor-not-allowed"}
+        pageClassName={"px-3 py-1 border rounded cursor-pointer"}
+        activeClassName={"bg-[#003459] text-white cursor-pointer"}
+        previousClassName={"px-3 py-1 border rounded cursor-pointer"}
+        nextClassName={"px-3 py-1 border rounded cursor-pointer"}
+        disabledClassName={"opacity-50 cursor-not-allowed cursor-pointer"}
       />
     </div>
   );
