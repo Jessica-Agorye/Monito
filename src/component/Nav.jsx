@@ -1,7 +1,7 @@
 import { useState } from "react";
 import logo from "../assets/logo.png";
 import hamburger1 from "../assets/hamburger1.png";
-import searchicon from "../assets/searchicon.png";
+import searchicon from "../assets/searchIcon.png";
 import i18n from "../assets/i18n.png";
 
 const Nav = () => {
